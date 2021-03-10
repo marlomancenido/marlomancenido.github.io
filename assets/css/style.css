@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('../fonts/HelveticaNeueLTStd-BlkEx.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTStd-BlkEx.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    background-color: #390099;
+}
+
+* {
+	font-family: 'Poppins';
+}
+
+body{
+	margin-top: 30vh;
+	max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EBE9E9;
+}
+
+
+.mainTitle h1{
+	font-family: 'Helvetica Neue LT Std';
+	font-weight: 900;
+	font-size: 9.8vw;
+    line-height: 8vw;
+    margin-bottom: 0;
+    color: #F3F8F2;
+    cursor: default;
+}
+
+.mainTitle h1:hover{
+	color: #FF5400;
+}
+
+.mainTitle h2{
+	font-family: 'Helvetica Neue LT Std';
+	font-weight: 900;
+	color: #FFBD00;
+	font-size: 4vw;
+	margin-top: 0;
+}
+
+.answerBox{
+	max-width: 35vh;
+	margin-right: 2vw;
+	float: left;
+}
+
+.answerBox .question{
+	font-weight: 900; 
+	font-size: 0.9vw; 
+	letter-spacing: 5px; 
+	color: #EBE9E9;
+}
+
+.answerBox .answer b{
+	font-family: 'Helvetica Neue LT Std';
+	font-weight: 900;
+	font-size: 2.5vw;
+	color: #FF5400;
+}
