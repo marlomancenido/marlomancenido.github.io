@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('../fonts/HelveticaNeueLTStd-BlkEx.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTStd-BlkEx.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    background-color: #390099;
+    cursor: default;
+}
+
+* {
+	font-family: 'Poppins';
+}
+
+body{
+	margin-top: 15vh;
+	max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EBE9E9;
+    font-size: 1em;
+    padding-bottom: 10vh;
+}
+
+
+.mainTitle h1{
+	font-family: 'Helvetica Neue LT Std';
+	font-weight: 900;
+	font-size: 9.8vw;
+    line-height: 8vw;
+    margin-bottom: 0;
+    color: #F3F8F2;
+}
+
+.mainTitle h1:hover{
+	color: #FF5400;
+}
+
+.mainTitle h2{
+	font-family: 'Helvetica Neue LT Std';
+	font-weight: 900;
+	color: #FFBD00;
+	font-size: 4vw;
+	margin-top: 0;
+}
+
+.answers{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 3vw;
+	margin-top: 5vh;
+}
+
+.answerBox .question{
+	font-weight: 900; 
+	font-size: 0.8em; 
+	letter-spacing: 5px; 
+	color: #EBE9E9;
+}
+
+.answerBox .answer b{
+	font-family: 'Helvetica Neue LT Std';
+	font-weight: 900;
+	font-size: 1.5em;
+	color: #FF5400;
+}
+
+/*For screens below 1280px in width*/
+@media only screen and (max-width: 1280px) {
+	.answers{
+   		grid-template-columns: repeat(2,1fr);
+	}
+}
+
+/*For screens below 600px in width*/
+@media only screen and (max-width: 600px) {
+	.answers{
+   		grid-template-columns: repeat(1,1fr);
+	}
+}
